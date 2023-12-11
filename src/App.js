@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello React.js app using axios</h1>
-        <Weather city="Paris" />
+        <Weather city="Tokyo" />
         
       </header>
     </div>

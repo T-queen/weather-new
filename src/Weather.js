@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import axios from 'axios';
 import { Audio } from 'react-loader-spinner'
 
 export default function Weather(props) {
-    useEffect(() => {
+   
         function handleResponse(response) {
             alert(`The weather in ${response.data.name} is ${response.data.main.temp}°C`);
         }
@@ -11,7 +11,7 @@ export default function Weather(props) {
 
         axios.get(apiUrl)
         .then(handleResponse);
-}, []); // Add an empty dependency array to fetch data only once when the component is mounted
+
 
   return (
     <Audio
